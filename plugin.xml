@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.tagfans.cordova.pushplugin"
-      version="0.1.17">
+      version="0.1.18">
 	<name>Device</name>
 	<description>Cordova Push Device Plugin</description>
 	<keywords>cordova,device</keywords>
@@ -33,7 +33,6 @@
               <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
               <category android:name="$PACKAGE_NAME" />
             </intent-filter>
-			<activity android:name="myApplication"></activity>
           </receiver>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest">
@@ -49,7 +48,8 @@
         </config-file>
 
         <source-file src="src/android/parse/Parse-1.3.8.jar" target-dir="libs" framework="true" />
-        <source-file src="src/android/ParsePlugin.java" target-dir="src/org/apache/cordova/core" />      
+        <source-file src="src/android/ParsePlugin.java" target-dir="src/org/apache/cordova/core" />  
+		<source-file src="src/android/myApplication.java" target-dir="src/org/apache/cordova/core" />      		
      </platform>
           
 </plugin>
