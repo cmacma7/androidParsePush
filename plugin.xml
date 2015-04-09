@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.tagfans.cordova.pushplugin"
-      version="0.1.19">
+      version="0.1.20">
 	<name>Device</name>
 	<description>Cordova Push Device Plugin</description>
 	<keywords>cordova,device</keywords>
